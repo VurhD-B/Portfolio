@@ -6,8 +6,18 @@ export default function Home() {
   const [count, setCount] = useState(0);
 
   // Function to add a number to the counter:
-  const counterFunc = () => {
+  const counterFuncAdd = () => {
     setCount(count + 1);
+  }
+
+  // Function to subtract a number from the counter:
+  const counterFuncSubtract = () => {
+    setCount(count - 1);
+  }
+
+  // Function to reset the counter:
+  const counterFuncReset = () => {
+    setCount(0);
   }
 
   return (
@@ -15,7 +25,11 @@ export default function Home() {
         <p className="text-3xl font-extrabold">
           Count your life away: {count}
         </p>
-        <button className="button" onClick={counterFunc}>+</button>
+        <div className="flex gap-5">
+          <button className="button" onClick={counterFuncAdd}>+</button>
+          <button className="button" onClick={counterFuncSubtract}>-</button>
+          <button className="button" onClick={counterFuncReset}>Reset</button>
+        </div>
       </div>
   )
 }
