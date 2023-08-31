@@ -7,3 +7,7 @@
 html {
     font-family: Poppins, sans-serif;
 }
+
+.button {
+    @apply font-extrabold border-2 shadow-lg rounded-md bg-slate-400 px-5 py-3;
+}
