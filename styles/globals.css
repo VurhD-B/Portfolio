@@ -11,3 +11,7 @@ html {
 .button {
     @apply font-extrabold border-2 border-slate-500 shadow-lg rounded-md bg-slate-400 px-5 py-3;
 }
+
+.md-icon {
+    @apply text-3xl;
+}
