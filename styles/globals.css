@@ -9,7 +9,7 @@ html {
 }
 
 .button {
-    @apply font-extrabold border-2 border-slate-500 shadow-lg rounded-md bg-slate-400 px-5 py-3;
+    @apply text-sm font-normal border-[1px] border-black shadow-xl rounded-md px-2 py-1;
 }
 
 .md-icon {
